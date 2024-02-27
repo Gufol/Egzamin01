@@ -8,27 +8,40 @@
 </head>
 <body>
     <section class="kontener">
-        <header class="lewy"><h2>Dodanie zespołu ratowniczego</h2></header>
-        <header class="srodkowy"><p>Kontakt: <br> 022 222 11 333</p></header>
-        <header class="prawy"><img src="./obraz.jpg" alt="Ratownicy"></header>
+            <header>
+                <div class="lewy"><h2>Dodanie zespołu ratowniczego</h2></div>
+                <div class="srodkowy"><p>Kontakt: <br> 022 222 11 333</p></div>
+                <div class="prawy"><img src="./obraz.jpg" alt="Ratownicy"></div>
+            </header>
 
-        <section>
-            <h3>Dodaj nowy zespół</h3>
-            <form action="./dodanie.php">
-                Numer karetki:
-                <input type="number" name="" id="">
-                Imię i nazwisko pierwszego ratownika:
-                <input type="text">
-                Imię i nazwisko drugiego ratownika:
-                <input type="text">
-                Imię i nazwisko trzeciego ratownika:
-                <input type="text">
+        <section class="srodek">
+          
+            <form action="./dodanie.php" method="post">
+                <h3>Dodaj nowy zespół</h3>
+                Numer karetki:<br>
+                <input type="number" name="" id=""><br>
+                Imię i nazwisko pierwszego ratownika:<br>
+                <input type="text"><br>
+                Imię i nazwisko drugiego ratownika:<br>
+                <input type="text"><br>
+                Imię i nazwisko trzeciego ratownika:<br>
+                <input type="text"><br>
+                <input type="reset" value="CZYŚĆ">
+                <input type="submit" value="DODAJ">
             </form>
         </section>
 
-        <footer class="lewy"></footer>
-        <footer class="srodkowy"></footer>
-        <footer class="prawy"></footer>
+            <footer>
+                <div class="lewy"><a href="./kwerendy.txt">Zobacz kwerendy</a></div>
+                <div class="srodkowy">
+                    <h5>Przypominamy numery alarmowe</h5>
+                        <ul>
+                            <li>112</li>
+                            <li>999</li>
+                        </ul>
+                </div>
+                <div class="prawy"><p>Autor<br>000000000000</p></div>
+            </footer>
     </section>
    
 </body>

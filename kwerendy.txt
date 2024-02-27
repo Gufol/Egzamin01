@@ -1,0 +1,4 @@
+1.INSERT INTO ratownicy (ratownicy.nrKaretki, ratownicy.ratownik1, ratownicy.ratownik2, ratownicy.ratownik3) VALUES (20, 'Adam Nowak', 'Jan Kowalski', 'Anna Nowakowska');
+2.SELECT zgloszenia.id, zgloszenia.adres, zgloszenia.ratownicy_id FROM zgloszenia WHERE dyspozytorzy_id = 4;
+3.CREATE USER 'adam' IDENTIFIED BY 'Adam6&';
+4.GRANT CREATE, ALTER, DROP ON ratownicy TO 'adam';
